@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/alert_mensagem" android:paddingTop="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mensagem" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/alert_informacao" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:textColor="@drawable/textcolor_alert" android:id="@id/alert_nao" android:background="@drawable/borda_alert_left" android:layout_width="150.0dip" android:layout_height="50.0dip" android:text="@string/nao" />
+        <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@drawable/textcolor_alert" android:id="@id/alert_sim" android:background="@drawable/borda_alert_right" android:layout_width="150.0dip" android:layout_height="51.0dip" android:text="@string/sim" />
+    </LinearLayout>
+</LinearLayout>

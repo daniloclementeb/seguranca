@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/trabalhopos_tabela" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trabpos_titLayout" android:background="@drawable/titulohorarios" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/trabpos_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ava_contavaliacoes" android:background="@drawable/footerhorarios" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trabpos_linhadt" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/trabpos_dticon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/dticon" />
+            <TextView android:textSize="14.0sp" android:id="@id/trabpos_datalimite" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trabpos_linhadtentregue" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/trabpos_linhadt">
+            <ImageView android:id="@id/trabpos_dtentregueicon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/entregueicon" />
+            <TextView android:textSize="14.0sp" android:id="@id/trabpos_dtentregue" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trabpos_linhaprof" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/trabpos_linhadtentregue">
+            <ImageView android:id="@id/trabpos_proficon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/proficon" />
+            <TextView android:textSize="14.0sp" android:id="@id/trabpos_professor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/trabpos_linhadisciplina" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/trabpos_linhaprof">
+            <ImageView android:id="@id/trabpos_disciplinaicon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/tipoicon" />
+            <TextView android:textSize="14.0sp" android:id="@id/trabpos_disciplina" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

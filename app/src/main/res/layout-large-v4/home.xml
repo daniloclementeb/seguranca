@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/home_conteudo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/home_imgtopo" android:background="@drawable/topo_portal" android:layout_width="fill_parent" android:layout_height="110.0dip" />
+        <RelativeLayout android:id="@id/home_topo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="55.0dip">
+            <ImageView android:id="@id/home_foto" android:background="@drawable/foto" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/home_nome" android:background="@color/blacktransp" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/home_foto" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/home_rmtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/rmtitle" android:layout_toRightOf="@id/home_foto" android:layout_below="@id/home_nome" />
+            <TextView android:textSize="13.0sp" android:id="@id/home_rm" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="11.0dip" android:layout_toRightOf="@id/home_rmtitle" android:layout_below="@id/home_nome" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/home_cursolayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/home_topo">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/home_turmatitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/turmatitle" />
+            <TextView android:textSize="13.0sp" android:id="@id/home_turma" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/home_turmatitle" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/home_curso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/home_turmatitle" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/home_horarios" android:background="@drawable/borda" android:paddingLeft="7.0dip" android:paddingTop="10.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/home_cursolayout">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_ltituloaulas" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/home_ictituloaulas" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/ictitulohorairos" />
+                <TextView android:textStyle="bold" android:id="@id/home_tituloaulas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/aulastitle" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/home_banner" android:background="#ffeeeef0" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/home_horarios">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/home_ltitulodestaques" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/home_ictitulodestaques" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/ictitulohorairos" />
+                <TextView android:textStyle="bold" android:id="@id/home_titulodestaques" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/destaquestitle" />
+            </LinearLayout>
+            <ImageView android:id="@id/home_imgBanner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_below="@id/home_ltitulodestaques" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

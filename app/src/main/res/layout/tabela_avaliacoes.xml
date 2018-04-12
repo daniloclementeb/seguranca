@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_tabelahorairos" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_titLayout" android:background="@drawable/titulohorarios" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/ava_materia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ava_contavaliacoes" android:background="@drawable/footerhorarios" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/ava_tema" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ava_linhatema" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/ava_tema">
+            <ImageView android:id="@id/ava_dticon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/dticon" />
+            <TextView android:textSize="14.0sp" android:id="@id/ava_data" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ava_linhatipo" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_below="@id/ava_linhatema">
+            <ImageView android:id="@id/ava_tipoicon" android:layout_width="17.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/tipoicon" />
+            <TextView android:textSize="14.0sp" android:id="@id/ava_tipo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

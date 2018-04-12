@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/boletim_tabelanotas" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/boletim_titLayout" android:background="@drawable/titulohorarios" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/boletim_materia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/boletim_contavaliacoes" android:background="@drawable/backhorarios" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/boletim_center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llpr" android:background="@drawable/bordarigth" android:layout_width="68.0dip" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/boletim_titpr" android:background="@drawable/backboletim" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="PR(%)" />
+                <TextView android:textSize="16.0sp" android:id="@id/boletim_notapr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llmp" android:background="@drawable/bordarigth" android:layout_width="68.0dip" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/boletim_titmp" android:background="@drawable/backboletim" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="MP" />
+                <TextView android:textSize="16.0sp" android:id="@id/boletim_notamp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llexa" android:background="@drawable/bordarigth" android:layout_width="68.0dip" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/boletim_titexa" android:background="@drawable/backboletim" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="EXA" />
+                <TextView android:textSize="16.0sp" android:id="@id/boletim_notaexa" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llmf" android:layout_width="68.0dip" android:layout_height="60.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/boletim_titmf" android:background="@drawable/backboletim" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="58.0dip" android:layout_height="wrap_content" android:text="MF" />
+                <TextView android:textSize="16.0sp" android:id="@id/boletim_notamf" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/boletim_contavaliacoes2" android:background="@drawable/footerhorarios" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/boletim_titstatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="STATUS:" />
+            <TextView android:textSize="13.0sp" android:id="@id/boletim_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
