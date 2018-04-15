@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="horizontal" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/barra_home" android:background="@drawable/btnmenu" android:layout_width="50.0dip" android:layout_height="37.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" android:onClick="abrirMenu" />
-    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/barra_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
-    <ImageView android:id="@id/barra_logo" android:layout_width="wrap_content" android:layout_height="25.0dip" android:src="@drawable/logomagenta" android:layout_centerInParent="true" />
-    <Button android:id="@id/barra_config" android:background="@drawable/btnconfig" android:layout_width="50.0dip" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-</RelativeLayout>
